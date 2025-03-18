@@ -2,7 +2,8 @@ from zhipuai import ZhipuAI
 import requests
 import json
 
-
+ZHIPU_API_KEY = "da0c31cb5c9041a2bf2afaa95fa0d520.55m7NFjHmfZWV3d0"
+WEATHER_API_KEY = "8bc3a9fcfcee76dd299be4a975cfe9c6"
 
 # 查询天气函数
 def fetch_real_weather(location: str, unit: str = "celsius"):
@@ -87,7 +88,7 @@ while True:
             print(f"assistant:{res.content}") 
             break
     
-    print(messages)
+    # print(messages)
         
 
 
